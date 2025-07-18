@@ -3,64 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>glowGalore</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -->
+
+    <title>Glow Galore Beauty Store</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
+
   <body>
     <!-- deeper pink for the header, logo white color with -->
-    <header style="border: 1px solid blue">
-      <img
-        id="mainLogo"
-        src="./images/logo-purple.png"
-        alt="glow-galore-logo"
-      />
-      <section
-        id="hero"
-        class="hero-section"
-        style="border: 1px solid hsl(303, 23%, 29%)"
-      >
-        <h1>Welcome to glow galore!</h1>
-        <p>Reveal your inner glow</p>
-        <button id="shopNow">Shop Now</button>
-      </section>
-      <nav id="navBtns" style="border: 1px solid hsl(303, 100%, 50%)">
-        <div class="navBtn" id="hamburger">
+    <header class="header">
+      <div class="mainLogoWrapper">
+        <img
+          id="mainLogo"
+          src="./images/logo-purple-removebg-preview.png"
+          alt="glow-galore-logo"
+        />
+      </div>
+
+      <!-- nav bar -->
+      <nav id="navBtns">
+        <!-- <div class="navBtn" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
+        </div> -->
+        <button class="navBtn">
+          <img
+            id="hamburgerMenu"
+            src="./images/hamburger-menu-svgrepo-com (1).svg"
+            alt="hamburger menu icon svg"
+          />
+        </button>
+
+        <div class="navBtnWrapper">
+          <button class="navBtn">
+            <img
+              id="searchIcon"
+              src="./images/search-svgrepo-com (2).svg"
+              alt="search icon svg"
+            />
+          </button>
+          <button class="navBtn">
+            <img
+              id="shoppingCartIcon"
+              src="./images/shopping-bag-svgrepo-com (1).svg"
+              alt="shopping cart svg"
+            />
+          </button>
         </div>
-        <img
-          class="navBtn"
-          id="shoppingCartIcon"
-          src="./images/shopping-cart-svgrepo-com (1).svg"
-          alt="shopping cart svg"
-        />
-        <img
-          class="navBtn"
-          id="searchIcon"
-          src="./images/search-svgrepo-com.svg"
-          alt="search icon svg"
-        />
       </nav>
     </header>
 
-    <section
-      class="productSection"
-      id="productSection"
-      style="border: 1px solid hsl(0, 94%, 51%)"
-    >
+    <!-- Hero section with welcome message -->
+    <section class="heroSection" id="heroSection">
+      <h1 id="heroWelcomeMsg">Welcome to glow galore!</h1>
+      <p class="" id="heroTagLine">Reveal your inner glow</p>
+      <button class="CTA-Btn" id="shopNowBtn">Shop Now</button>
+    </section>
+
+    <!-- product section(main)-->
+    <section class="productSection" id="productSection">
       <h1>Explore our products</h1>
       <div class="products" id="onSale">
         <h2>Special Offers</h2>
-        <h3>Save some coins!</h3>
+        <p>Save some coins!</p>
       </div>
       <div class="products" id="moisturizers">
         <h2>Moisturizers</h2>
         <div class="cardWrapper">
-          <div class="card"></div>
+          <div class="card">
+            <img src="" alt="" />
+            <button class="">Add to cart</button>
+          </div>
         </div>
       </div>
-      <div class="products" id="Cleanser"><h2>Cleansers</h2></div>
-      <div class="products" id="sunscreen"><h2>Sunscreen</h2></div>
+      <div class="products" id="cleansers"><h2>Cleansers</h2></div>
+      <div class="products" id="sunscreens"><h2>Sunscreen</h2></div>
     </section>
+
+    <!-- footer section-->
+    <footer>
+      <img src="./images/instagram-logo-facebook-svgrepo-com.svg" alt="" />
+      <img src="./images/brand-tiktok-sq-svgrepo-com.svg" alt="" />
+    </footer>
+
+    <script src="./script/script.js"></script>
   </body>
 </html>
